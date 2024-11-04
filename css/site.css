@@ -28,32 +28,31 @@ header nav ul li a {
     font-weight: bold;
 }
 
-.section-intro {
+.section-accueil {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 50px;
-    background: linear-gradient(135deg, rgba(255, 0, 0, 0.5), rgba(0, 0, 0, 0.9));
-    margin: 20px 0;
+    background-color: #111;
 }
 
-.section-intro .content {
+.section-accueil .content {
     max-width: 50%;
 }
 
-.section-intro h1 {
+.section-accueil h1 {
     font-size: 2.5em;
     color: #fff;
     margin-bottom: 20px;
 }
 
-.section-intro p {
+.section-accueil p {
     font-size: 1.1em;
     line-height: 1.5;
     color: #ddd;
 }
 
-.section-intro .btn {
+.section-accueil .btn {
     display: inline-block;
     padding: 10px 20px;
     color: #fff;
@@ -65,11 +64,11 @@ header nav ul li a {
     transition: background-color 0.3s;
 }
 
-.section-intro .btn:hover {
+.section-accueil .btn:hover {
     background-color: #a00000;
 }
 
-.section-intro .image img {
+.section-accueil .image img {
     max-width: 300px;
 }
 
@@ -92,4 +91,9 @@ footer .reseaux-sociaux a {
 
 footer .reseaux-sociaux a:hover {
     color: #fff;
+}
+
+footer img {
+    margin-top: 10px;
+    width: 80px;
 }
