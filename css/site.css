@@ -97,3 +97,46 @@ footer img {
     margin-top: 10px;
     width: 80px;
 }
+
+/* Styles généraux */
+main section {
+    padding: 50px;
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 2.5em;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    color: #ddd;
+}
+
+.equipe-list, .films-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.membre, .film {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+}
+
+.membre h2, .film h2 {
+    font-size: 1.2em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
