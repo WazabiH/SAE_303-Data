@@ -1,24 +1,17 @@
 <nav class="navigation-principale conteneur-1280">
     <ul>
-        <li <?php if ($page_active === "index") {
+        <li <?php if ($page_active === "accueil") {
                 echo "class='active'";
             } ?>><a href="./">ACCUEIL</a>
         </li>
+        <li <?php if ($page_active === "film") {
+                echo "class='active'";
+            } ?>><a href="./a-propos.php">FILM</a></li>
         <li <?php if ($page_active === "apropos") {
                 echo "class='active'";
-            } ?>><a href="./a-propos.php">A PROPOS</a></li>
-        <li <?php if ($page_active === "lieux") {
-                echo "class='active'";
-            } ?>><a href="./lieux-de-vie.php">LIEUX DE VIE</a></li>
+            } ?>><a href="./lieux-de-vie.php">À PROPOS</a></li>
         <li <?php if ($page_active === "equipe") {
                 echo "class='active'";
-            } ?>><a href="./equipe_redaction.php">ÉQUIPE DE RÉDACTION</a></li>
-        <li <?php if ($page_active === "medias") {
-                echo "class='active'";
-            } ?>><a href="./sur-les-medias.php">SUR LES MÉDIAS</a></li>
-        <li <?php if ($page_active === "contact") {
-                echo "class='active'";
-            } ?>><a href="./contact.php">CONTACT</a></li>
-        <li class="lien-admin"><a href="./administration/auteurs">Administration</a></li>
+            } ?>><a href="./equipe_redaction.php">ÉQUIPE</a></li>
     </ul>
 </nav>
