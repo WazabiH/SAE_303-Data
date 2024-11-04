@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Site consacré aux films et à l'univers du cinéma.">
-    <title>Accueil - Cinéma Passion</title>
-    <link rel="stylesheet" href="css/site.css"> <!-- Lien vers le fichier CSS pour styliser la page -->
+    <title>Accueil - Site de Cinéma</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -16,19 +15,47 @@
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="films.html">Films</a></li>
                 <li><a href="a-propos.html">À Propos</a></li>
-                <li><a href="equipe.html">L'Équipe</a></li>
-
-    
+                <li><a href="equipe.html">Équipe</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Contenu principal -->
+    <!-- Section d'accueil avec accès aux pages principales -->
     <main>
-        <section class="hero">
-            <h1>Bienvenue sur Cinéma Passion</h1>
-            <p>Découvrez les films les plus passionnants et explorez l'univers du cinéma avec nous.</p>
-            <a href="films.html" class="btn">Voir les Films</a>
+        <!-- Section pour l'équipe -->
+        <section class="section-intro" id="equipe">
+            <div class="content">
+                <h1>DÉCOUVREZ NOTRE ÉQUIPE</h1>
+                <p>Plongez dans l'univers captivant de notre équipe passionnée de cinéma. Un site unique pour les cinéphiles !</p>
+                <a href="equipe.html" class="btn">Voir Équipe</a>
+            </div>
+            <div class="image">
+                <img src="media/clap.png" alt="Clap de cinéma">
+            </div>
+        </section>
+
+        <!-- Section pour les films -->
+        <section class="section-intro" id="films">
+            <div class="content">
+                <h1>EXPLOREZ NOS FILMS</h1>
+                <p>Découvrez notre sélection de films et évaluez la représentation des personnages féminins grâce au Bechdel Score.</p>
+                <a href="films.html" class="btn">Voir Films</a>
+            </div>
+            <div class="image">
+                <img src="media/films.png" alt="Films">
+            </div>
+        </section>
+
+        <!-- Section à propos -->
+        <section class="section-intro" id="a-propos">
+            <div class="content">
+                <h1>À PROPOS DE NOUS</h1>
+                <p>Apprenez-en plus sur notre vision et notre engagement pour un cinéma inclusif et éducatif.</p>
+                <a href="a-propos.html" class="btn">En Savoir Plus</a>
+            </div>
+            <div class="image">
+                <img src="media/about.png" alt="À propos">
+            </div>
         </section>
     </main>
 
@@ -39,11 +66,10 @@
                 <li><a href="https://www.facebook.com/CYCergyParisUniversite/?locale=fr_FR" target="_blank">Facebook</a></li>
                 <li><a href="https://twitter.com/UniversiteCergy?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">Twitter</a></li>
                 <li><a href="https://www.cyu.fr/" target="_blank">Université CY Paris Université</a></li>
-                <li><a href="#">• Remonter</a></li>
+                <li><a href="#top">• Remonter</a></li>
             </ul>
             <p>2023-2024 - BUT MMI - CY Paris Université</p>
         </nav>
-        <img src="media/CY_Cergy_Paris_Universite_-_Logo.png" alt="Logo CY Paris Université" class="logo-footer">
     </footer>
 
 </body>
