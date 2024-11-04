@@ -1,0 +1,120 @@
+/* Styles généraux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Corps de la page */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Barre de navigation */
+header {
+    background-color: #333;
+    padding: 1rem 0;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+header nav ul li {
+    margin: 0 1.5rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+header nav ul li a:hover {
+    color: #f0a500;
+}
+
+/* Section principale (Hero) */
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-image: url('background.jpg'); /* Ajouter une image de fond */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    flex: 1;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+}
+
+.btn {
+    background-color: #f0a500;
+    color: #333;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ffbe32;
+}
+
+/* Pied de page */
+.site-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.navigation-externe {
+    margin-bottom: 1rem;
+}
+
+.reseaux-sociaux {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.reseaux-sociaux li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.reseaux-sociaux li a:hover {
+    color: #f0a500;
+}
+
+.site-footer p {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+.logo-footer {
+    max-width: 120px;
+    margin-top: 1rem;
+}
