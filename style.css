@@ -1,93 +1,58 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+img {
+    max-width: 100%;
+}
+.slider-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+    height: 350px;
+    overflow: hidden;
+}
+.menu {
+    position: absolute;
+    left: 0;
+    z-index: 11;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+.menu label {
+    cursor: pointer;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+    border-radius: 50px;
+    margin: 0 0.2em 1em;
+}
+.menu label:hover,.menu label:focus {
+    background: #1c87c9;
+}
+.slide-input{
+    opacity: 0;
+}
+.slide-img {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    transition: left 0s 0.75s;
+}
+[id^="slide"]:checked + .slide-img {
+    left: 0;
+    z-index: 100;
+    transition: left 0.65s ease-out;
+}
 
 
  
+  
  
- .slider-1 {
-    max-width: 800px; /* Augmenter la largeur */
-    margin: 100px auto;
-    overflow: hidden;
-    border: 1px solid #f1f1f1;
-}
-.slider-1 p {
-    background: #000;
-    flex-shrink: 0;
-    padding: 100px 0; /* Augmenter la hauteur */
-    width: 100%;
-    text-align: center;
-    font-size: 50px; /* Augmenter la taille de la police */
-    color: #f1f1f1;
-}
-  
-    /* Si on veut faire glisser vers la droite */
-    /* Il faut aussi changer l'animation(transform) en valeurs positives */
-    /* flex-direction: row-reverse; */
-
-  
-  
-  /* 
-     5% par transition, nombre choisi arbitrairement.
-  
-     reste divisé par nb de pauses
-     80(%) / 4 = 20(%) par pause
-  */
-  
-  @keyframes slider-1 {
-    0%,
-    20% {
-      transform: translateX(0);
-    }
-    25%,
-    45% {
-      transform: translateX(-100%);
-    }
-    50%,
-    70% {
-      transform: translateX(-200%);
-    }
-    75%,
-    95% {
-      transform: translateX(-300%);
-    }
-    100% {
-      transform: translateX(-400%);
-    }
-  } 
-  
-  /* Verticale */
-  
-  .slider-2 {
-    max-width: 800px; /* Augmenter la largeur */
-    height: 300px; /* Augmenter la hauteur */
-    margin: 100px auto;
-    overflow: hidden;
-    border: 1px solid #f1f1f1;
-}
-.slider-2 p {
-    flex-shrink: 0;
-    padding: 100px 0; /* Ajuster pour la hauteur */
-    width: 100%;
-    text-align: center;
-    font-size: 50px; /* Ajuster la taille de la police */
-    color: #f1f1f1;
-}
-  @keyframes slider-2 {
-    0%,
-    20% {
-      transform: translateY(0);
-    }
-    25%,
-    45% {
-      transform: translateY(-100%);
-    }
-    50%,
-    70% {
-      transform: translateY(-200%);
-    }
-    75%,
-    95% {
-      transform: translateY(-300%);
-    }
-    100% {
-      transform: translateY(-400%);
-    }
-  }
