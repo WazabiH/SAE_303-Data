@@ -20,6 +20,18 @@ body{
     color: black;
 }
 
+/*NAVIGATION*/
+.navigation-container{
+    display: flex;             /* Affiche les éléments en ligne */
+  justify-content: flex-end; /* Aligne la navigation à droite */
+  background-color: #284E7B; /* Couleur de fond de la barre */
+  padding: 1rem; 
+}
+
+
+
+
+
 .h1 {
     color: #cb4e5c;
 }
