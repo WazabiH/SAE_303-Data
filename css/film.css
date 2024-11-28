@@ -83,11 +83,20 @@ h1 {
 /* Conteneur de recherche */
 #search-container {
     text-align: center;
-    margin: 20px 0;
+    margin: 20px 20px;
 }
 
 #search-bar {
-    width: 60%;
+    width: 80%;
     padding: 10px;
+    font-size: 16px;
     border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#search-bar:focus {
+    outline: none;
+    border-color: #007BFF;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
 }
