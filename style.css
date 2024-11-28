@@ -20,12 +20,13 @@
   .slider-1 p {
     background: #000;
     flex-shrink: 0;
-    padding: 100px 0; /* Augmenter la hauteur */
+    padding: 100px 0;
     width: 100%;
     text-align: center;
-    font-size: 50px; /* Augmenter la taille de la police */
+    font-size: 45px;
     color: #f1f1f1;
-}
+  }
+  
   
   /* 
      5% par transition, nombre choisi arbitrairement.
@@ -59,8 +60,8 @@
   /* Verticale */
   
   .slider-2 {
-    max-width: 600px;
-    height: 200px;
+    max-width: 800px; /* Augmenter la largeur */
+    height: 300px; /* Augmenter la hauteur */
     margin: 100px auto;
     overflow: hidden;
     border: 1px solid #f1f1f1;
@@ -75,10 +76,10 @@
   }
   .slider-2 p {
     flex-shrink: 0;
-    padding: 72px 0;
+    padding: 100px 0; /* Ajuster pour la hauteur */
     width: 100%;
     text-align: center;
-    font-size: 45px;
+    font-size: 50px; /* Ajuster la taille de la police */
     color: #f1f1f1;
   }
   @keyframes slider-2 {
