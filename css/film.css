@@ -1,0 +1,102 @@
+/* Style global */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin: 20px 0;
+}
+
+/* Conteneur des films */
+#film-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Style pour chaque film */
+.film-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 250px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.film-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Image du film */
+.film-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Informations du film */
+.film-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.film-info h2 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0 5px;
+}
+
+.film-info p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+}
+
+/* Bechdel score */
+.film-info .bechdel-score {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+/* Lien vers IMDB */
+.film-info a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 14px;
+}
+
+.film-info a:hover {
+    text-decoration: underline;
+}
+
+/* Conteneur de recherche */
+#search-container {
+    text-align: center;
+    margin: 20px 20px;
+}
+
+#search-bar {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#search-bar:focus {
+    outline: none;
+    border-color: #007BFF;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+}
