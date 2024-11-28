@@ -1,31 +1,27 @@
 
 
  
-  
-  .slider-1 {
-    max-width: 600px;
+ 
+ .slider-1 {
+    max-width: 800px; /* Augmenter la largeur */
     margin: 100px auto;
     overflow: hidden;
     border: 1px solid #f1f1f1;
-  
-  }
-  .slider-1 .slider {
-    animation: slider-1 12s infinite ease-in-out;
-    display: flex;
+}
+.slider-1 p {
+    background: #000;
+    flex-shrink: 0;
+    padding: 100px 0; /* Augmenter la hauteur */
+    width: 100%;
+    text-align: center;
+    font-size: 50px; /* Augmenter la taille de la police */
+    color: #f1f1f1;
+}
   
     /* Si on veut faire glisser vers la droite */
     /* Il faut aussi changer l'animation(transform) en valeurs positives */
     /* flex-direction: row-reverse; */
-  }
-  .slider-1 p {
-    background: #000;
-    flex-shrink: 0;
-    padding: 72px 0;
-    width: 100%;
-    text-align: center;
-    font-size: 45px;
-    color: #f1f1f1;
-  }
+
   
   
   /* 
@@ -60,28 +56,20 @@
   /* Verticale */
   
   .slider-2 {
-    max-width: 600px;
-    height: 200px;
+    max-width: 800px; /* Augmenter la largeur */
+    height: 300px; /* Augmenter la hauteur */
     margin: 100px auto;
     overflow: hidden;
     border: 1px solid #f1f1f1;
-  }
-  .slider-2 .slider {
-    height: 100%;
-    animation: slider-2 12s infinite ease-in-out;
-    
-    /* Pour inverser l'animation */
-    /* display: flex; 
-    flex-direction: column-reverse; */
-  }
-  .slider-2 p {
+}
+.slider-2 p {
     flex-shrink: 0;
-    padding: 72px 0;
+    padding: 100px 0; /* Ajuster pour la hauteur */
     width: 100%;
     text-align: center;
-    font-size: 45px;
+    font-size: 50px; /* Ajuster la taille de la police */
     color: #f1f1f1;
-  }
+}
   @keyframes slider-2 {
     0%,
     20% {
