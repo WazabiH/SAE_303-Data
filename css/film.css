@@ -79,3 +79,15 @@ h1 {
 .film-info a:hover {
     text-decoration: underline;
 }
+
+/* Conteneur de recherche */
+#search-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#search-bar {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
