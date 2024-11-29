@@ -110,8 +110,8 @@
     }
     
     background-custom {
-      background-color: #f0f8ff; /* AliceBlue, remplacez par votre couleur */
-      color: #ecbdc3; /* Couleur du texte, ajustez si nécessaire */
+      background-color: #ecbdc3; ; /* AliceBlue, remplacez par votre couleur */
+      color: white; /* Couleur du texte, ajustez si nécessaire */
       min-height: 100vh; /* Assurez-vous que la hauteur couvre tout l'écran */
       margin: 0; /* Supprime les marges par défaut */
       padding: 0;
