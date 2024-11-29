@@ -7,9 +7,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSS Slider</title>
   <link rel="stylesheet" href="style.css">
+  <style> 
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #cc4e5d;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color:#e37079 ;
+  text-align: center;
+  padding: 18px 20px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: white;
+}
+</style>
 </head>
 <body>
-  
+  <ul>
+    <li><a href="default.asp">Home</a></li>
+    <li><a href="news.asp">News</a></li>
+    <li><a href="contact.asp">Contact</a></li>
+    <li><a href="about.asp">About</a></li>
+  </ul>
   <!-- Horizontal -->
   <div class="slider-container slider-1">
     <div class="slider">

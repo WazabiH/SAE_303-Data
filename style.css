@@ -1,14 +1,12 @@
 
 
  
-  
   .slider-1 {
-    max-width: 600px;
+    max-width: 1200px; /* Augmentation de la largeur */
     margin: 100px auto;
     overflow: hidden;
     border: 1px solid #f1f1f1;
-  
-  }
+}
   .slider-1 .slider {
     animation: slider-1 12s infinite ease-in-out;
     display: flex;
@@ -20,12 +18,12 @@
   .slider-1 p {
     background: #000;
     flex-shrink: 0;
-    padding: 72px 0;
+    padding: 200px 0; /* Augmentation de la hauteur */
     width: 100%;
     text-align: center;
-    font-size: 45px;
+    font-size: 80px; /* Police encore plus grande */
     color: #f1f1f1;
-  }
+}
   
   
   /* 
@@ -60,12 +58,13 @@
   /* Verticale */
   
   .slider-2 {
-    max-width: 600px;
-    height: 200px;
+    max-width: 1200px; /* Augmenter la largeur */
+    height: 600px; /* Augmenter la hauteur */
     margin: 100px auto;
     overflow: hidden;
     border: 1px solid #f1f1f1;
-  }
+}
+
   .slider-2 .slider {
     height: 100%;
     animation: slider-2 12s infinite ease-in-out;
@@ -76,12 +75,12 @@
   }
   .slider-2 p {
     flex-shrink: 0;
-    padding: 72px 0;
+    padding: 300px 0; /* Ajustement pour une grande hauteur */
     width: 100%;
     text-align: center;
-    font-size: 45px;
+    font-size: 80px; /* Police adaptée à la taille */
     color: #f1f1f1;
-  }
+}
   @keyframes slider-2 {
     0%,
     20% {
@@ -102,4 +101,5 @@
     100% {
       transform: translateY(-400%);
     }
+
   }
