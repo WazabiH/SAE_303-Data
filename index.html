@@ -42,11 +42,24 @@ li {
 li:last-child {
   border-right: none;
 }
+/* Style for the image/logo */
+.navbar-logo {
+      width: 40px; /* Change size accordingly */
+      height: auto;
+      padding: 5px;
+      margin-right: 10px;
+      vertical-align: middle; /* Align image with text */
+    }
+
+    /* Optional: You can add padding to the first 'li' to space out the logo */
+    li:first-child {
+      padding-left: 20px;
+    }
 </style>
 </head>
 <body>
   <ul>
-    <li><a href="default.asp">Film</a></li>
+    <li><a href="default.asp"><img src="Logo.png" alt="Logo" class="navbar-logo"> Film</a></li>
     <li><a href="news.asp">Equipe</a></li>
     <li><a href="contact.asp">A propos de </a></li>
     <li><a href="about.asp"> Contact </a></li>
