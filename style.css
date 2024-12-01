@@ -87,6 +87,13 @@
    margin-bottom: 0;
 
 }
+.Nuage-img {
+  width: 100px; /* Largeur de l'image */
+  height: auto; /* Hauteur proportionnelle */
+  display: block; /* Pour centrer l'image facilement */
+  margin: 0 auto; /* Centrage horizontal */
+}
+
 
 
 
