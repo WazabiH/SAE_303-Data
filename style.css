@@ -85,9 +85,9 @@
   }
   
   .Logo-img {
-   height: 20; 
-   margin-left: -10px;
-   margin-bottom: 0;
+   height: 80px; 
+   margin-left: 0;
+   margin-bottom: 30px;
 
 }
 .Nuage-img {
@@ -100,6 +100,11 @@
   flex-direction: column;
   align-items: flex-start;
 }
+h2 {
+  margin-top: 0; /* Éviter les marges par défaut */
+  text-align: center; /* Centrer le texte */
+}
+
 
 
 
