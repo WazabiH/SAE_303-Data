@@ -65,6 +65,10 @@
   carousel-imgitem {
       height: 500px; /* Correspond à la hauteur des images */
   }
-    
+  body {
+    background: linear-gradient(to right, #9e275f, #c84e89); /* Dégradé orange */
+    color: white;
+    font-family: Arial, sans-serif;
+}
   
    
