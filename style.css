@@ -57,18 +57,38 @@
         padding-left: 20px;
       }
 
-    carousel-img {
+    .carousel-img {
         width: 100%; /* La largeur des images s'adapte au conteneur */
         height: 500px; /* Définissez une hauteur fixe */
         object-fit: cover; /* Adapte l'image pour remplir le conteneur sans distorsion */
     }
-  carousel-imgitem {
+  .item {
       height: 500px; /* Correspond à la hauteur des images */
+    }
+    .section.violet {
+      padding: 100px 0;
+      background: #cc4e5d;
+      margin-top: 100px;
+
   }
-  body {
-    background: linear-gradient(to right, #9e275f, #c84e89); /* Dégradé orange */
-    color: white;
-    font-family: Arial, sans-serif;
-}
   
-   
+  
+  .flex {
+      display: flex;
+  }
+  
+  .gap20 {
+      gap: 70px;
+  }
+  
+  .Logo-img {
+   height: 20; 
+   margin-left: -10px;
+   margin-bottom: 0;
+
+}
+
+
+
+
+

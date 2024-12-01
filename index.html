@@ -10,13 +10,19 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <body class="background-custom"> 
-    
+ <style>
+  body {
+            background-color: #d7c3d8; /* Couleur bleu clair */
+            color: #333; /* Couleur du texte pour le contraste */
+            font-family: Arial, sans-serif;
+        }
+</style>
   </body>
 </head>
 <body>
   <ul>
     <li>
-    <img src="media/Logo.png" alt="Logo" height="80" class="navbar-logo"></li>
+    <img src="media/Logo.png" alt="Logo" height="90" class="navbar-logo"></li>
     <li><a href="default.asp">Films</a></li>
     <li><a href="news.asp">Equipe</a></li>
     <li><a href="contact.asp">A propos de</a></li>
@@ -27,16 +33,7 @@
   <div class="container">
     <h2>Les films les plus appréciés</h2>  
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <style> 
-      carousel-img {
-        width: 100%; /* La largeur des images s'adapte au conteneur */
-        height: 500px; /* Définissez une hauteur fixe */
-        object-fit: cover; /* Adapte l'image pour remplir le conteneur sans distorsion */
-    }
-  carousel-img .item {
-      height: 500px; /* Correspond à la hauteur des images */
-  }
-</style>
+
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -69,12 +66,23 @@
       </a>
     </div>
   </div>
-  
-
 
 </head>
 <body>
-  
+  <!-- Corrigez l'image avec une balise <img> correctement formée -->
+  <div>
+    <img class="Nuage-img" src="media/Nuage.png" alt="Image de nuage">
+  </div>
+  <div style="margin-bottom: 100px;"></div>
+  <div class="section violet"> 
+    <img class="Logo-img" src="media/Logo.png" alt="Logo">
+    <div class="boxed text-center">
+      <h2> Qui sommes-nous ? </h2>
+      <div class="flex gap20"> 
 
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>
