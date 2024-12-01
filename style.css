@@ -137,6 +137,10 @@
   }
 }
 
+element {
+  margin-bottom: 20px;
+}
+
     /* Conteneur global pour élargir la page */
     container {
       max-width: 1200px; /* Ajustez cette valeur pour agrandir */
