@@ -69,6 +69,9 @@
       padding: 50px 0;
       background: #cc4e5d;
       margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
   }
   
@@ -89,10 +92,15 @@
 }
 .Nuage-img {
   width: 100px; /* Largeur de l'image */
-  height: auto; /* Hauteur proportionnelle */
   margin-left: -20; /* Pour centrer l'image facilement */
-  margin: 0 auto; /* Centrage horizontal */
 }
+
+.boxed{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 
 
 
