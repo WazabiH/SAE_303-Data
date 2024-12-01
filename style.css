@@ -86,24 +86,28 @@
 
 .flex {
   display: flex;
+  justify-content: center; /* Centre les éléments enfants horizontalement */
+  align-items: center; /* Centre les éléments verticalement */
+  flex-wrap: wrap; /* Permet de s'adapter si les éléments débordent */
 }
- .w40 {
-  width: 40%;
- }
 
- .w60 {
-  width: 60%;
- }
+.w40, .w60 {
+  padding: 10px; /* Ajoute de l'espace intérieur */
+}
 
- h2{
+.w40 h2 {
+  text-align: center; /* Centre le titre */
   font-size: 3rem;
- }
+  margin-bottom: 20px; /* Ajoute de l'espace sous le titre */
+}
 
- p{
-  font-size : 1.5rem;
-  line-height: 1.5em;
+.w60 p {
+  text-align: justify; /* Justifie le texte */
+  font-size: 1.5rem;
+  line-height: 1.8em; /* Espace entre les lignes */
+  margin: 0; /* Retire les marges inutiles */
+}
 
- }
 
  .pink {
   background:#ecbdc3;
