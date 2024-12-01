@@ -57,12 +57,12 @@
         padding-left: 20px;
       }
 
-       carousel-img {
+      .carousel-img {
         width: 100%; /* La largeur des images s'adapte au conteneur */
         height: 500px; /* Définissez une hauteur fixe */
         object-fit: cover; /* Adapte l'image pour remplir le conteneur sans distorsion */
     }
-    carousel-inner .item {
+  .carousel-img .item {
       height: 500px; /* Correspond à la hauteur des images */
   }
     
