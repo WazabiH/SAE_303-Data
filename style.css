@@ -68,7 +68,6 @@
     .section {
       padding: 100px 0;
       background: #cc4e5d;
-
   }
   
   
@@ -82,4 +81,8 @@
   
   .Logo-img {
    height: 20; 
+}
+
+.violet {
+  background:#cc4e5d;;
 }
