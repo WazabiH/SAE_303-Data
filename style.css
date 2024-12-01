@@ -66,11 +66,15 @@
       height: 500px; /* Correspond à la hauteur des images */
     }
 
+    .section  {
+    Padding: 100px 0;
+    }
+
 .boxed{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  max-width: 1280px;
+  margin-inline: auto;
 }
+
 
 
 
