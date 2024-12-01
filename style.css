@@ -68,7 +68,7 @@
 
     .section {
       padding: 50px 0;
-      margin-top: 50px; /* Ajoute un espace de 50px entre le carousel et la section */
+      margin-top: 70px; /* Ajoute un espace de 50px entre le carousel et la section */
       background: #cc4e5d;
       display: flex;
       flex-direction: column;
@@ -103,6 +103,11 @@
   font-size : 1.5rem;
   line-height: 1.5em;
 
+ }
+
+ .pink {
+  background:#ecbdc3;
+  color:  #cc4e5d;
  }
 
 
