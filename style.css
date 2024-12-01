@@ -1,106 +1,141 @@
 
 
  
-  .slider-1 {
-    max-width: 1200px; /* Augmentation de la largeur */
-    margin: 100px auto;
-    overflow: hidden;
-    border: 1px solid #f1f1f1;
-}
-  .slider-1 .slider {
-    animation: slider-1 12s infinite ease-in-out;
-    display: flex;
-  
-    /* Si on veut faire glisser vers la droite */
-    /* Il faut aussi changer l'animation(transform) en valeurs positives */
-    /* flex-direction: row-reverse; */
-  }
-  .slider-1 p {
-    background: #000;
-    flex-shrink: 0;
-    padding: 200px 0; /* Augmentation de la hauteur */
-    width: 100%;
-    text-align: center;
-    font-size: 80px; /* Police encore plus grande */
-    color: #f1f1f1;
-}
-  
-  
-  /* 
-     5% par transition, nombre choisi arbitrairement.
-  
-     reste divisé par nb de pauses
-     80(%) / 4 = 20(%) par pause
-  */
-  
-  @keyframes slider-1 {
-    0%,
-    20% {
-      transform: translateX(0);
-    }
-    25%,
-    45% {
-      transform: translateX(-100%);
-    }
-    50%,
-    70% {
-      transform: translateX(-200%);
-    }
-    75%,
-    95% {
-      transform: translateX(-300%);
-    }
-    100% {
-      transform: translateX(-400%);
-    }
-  } 
-  
-  /* Verticale */
-  
-  .slider-2 {
-    max-width: 1200px; /* Augmenter la largeur */
-    height: 600px; /* Augmenter la hauteur */
-    margin: 100px auto;
-    overflow: hidden;
-    border: 1px solid #f1f1f1;
-}
 
-  .slider-2 .slider {
-    height: 100%;
-    animation: slider-2 12s infinite ease-in-out;
-    
-    /* Pour inverser l'animation */
-    /* display: flex; 
-    flex-direction: column-reverse; */
-  }
-  .slider-2 p {
-    flex-shrink: 0;
-    padding: 300px 0; /* Ajustement pour une grande hauteur */
-    width: 100%;
-    text-align: center;
-    font-size: 80px; /* Police adaptée à la taille */
-    color: #f1f1f1;
+  
+  
+#slider {
+  margin: 0 auto;
+  width: 800px;
+  max-width: 100%;
+  text-align: center;
 }
-  @keyframes slider-2 {
-    0%,
-    20% {
-      transform: translateY(0);
-    }
-    25%,
-    45% {
-      transform: translateY(-100%);
-    }
-    50%,
-    70% {
-      transform: translateY(-200%);
-    }
-    75%,
-    95% {
-      transform: translateY(-300%);
-    }
-    100% {
-      transform: translateY(-400%);
-    }
+#slider input[type=radio] {
+  display: none;
+}
+#slider label {
+  cursor:pointer;
+  text-decoration: none;
+}
+#slides {
+  padding: 10px;
+  border: 3px solid #ccc;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+}
+#overflow {
+  width: 100%;
+  overflow: hidden;
+}
+#slide1:checked ~ #slides .inner {
+  margin-left: 0;
+}
+#slide2:checked ~ #slides .inner {
+  margin-left: -100%;
+}
+#slide3:checked ~ #slides .inner {
+  margin-left: -200%;
+}
+#slide4:checked ~ #slides .inner {
+  margin-left: -300%;
+}
+#slides .inner {
+  transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+  width: 400%;
+  line-height: 0;
+  height: 300px;
+}
+#slides .slide {
+  width: 25%;
+  float:left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #fff;
+}
+#slides .slide_1 {
+  background: #00171F;
+}
+#slides .slide_2 {
+  background: #003459;
+}
+#slides .slide_3 {
+  background: #007EA7;
+}
+#slides .slide_4 {
+  background: #00A8E8;
+}
+#controls {
+  margin: -180px 0 0 0;
+  width: 100%;
+  height: 50px;
+  z-index: 3;
+  position: relative;
+}
+#controls label {
+  transition: opacity 0.2s ease-out;
+  display: none;
+  width: 50px;
+  height: 50px;
+  opacity: .4;
+}
+#controls label:hover {
+  opacity: 1;
+}
+#slide1:checked ~ #controls label:nth-child(2),
+#slide2:checked ~ #controls label:nth-child(3),
+#slide3:checked ~ #controls label:nth-child(4),
+#slide4:checked ~ #controls label:nth-child(1) {
+  background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
+  float:right;
+  margin: 0 -50px 0 0;
+  display: block;
+}
+#slide1:checked ~ #controls label:nth-last-child(2),
+#slide2:checked ~ #controls label:nth-last-child(3),
+#slide3:checked ~ #controls label:nth-last-child(4),
+#slide4:checked ~ #controls label:nth-last-child(1) {
+  background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
+  float:left;
+  margin: 0 0 0 -50px;
+  display: block;
+}
+#bullets {
+  margin: 150px 0 0;
+  text-align: center;
+}
+#bullets label {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius:100%;
+  background: #ccc;
+  margin: 0 10px;
+}
+#slide1:checked ~ #bullets label:nth-child(1),
+#slide2:checked ~ #bullets label:nth-child(2),
+#slide3:checked ~ #bullets label:nth-child(3),
+#slide4:checked ~ #bullets label:nth-child(4) {
+  background: #444;
+}
+@media screen and (max-width: 900px) {
+  #slide1:checked ~ #controls label:nth-child(2),
+  #slide2:checked ~ #controls label:nth-child(3),
+  #slide3:checked ~ #controls label:nth-child(4),
+  #slide4:checked ~ #controls label:nth-child(1),
+  #slide1:checked ~ #controls label:nth-last-child(2),
+  #slide2:checked ~ #controls label:nth-last-child(3),
+  #slide3:checked ~ #controls label:nth-last-child(4),
+  #slide4:checked ~ #controls label:nth-last-child(1) {
+     margin: 0;
+  }
+  #slides {
+     max-width: calc(100% - 140px);
+     margin: 0 auto;
+  }
+}
 
     /* Conteneur global pour élargir la page */
     container {
@@ -117,7 +152,7 @@
       padding: 0;
     }
 
-  } 
+   
   ul {
     list-style-type: none;
     margin: 0;
