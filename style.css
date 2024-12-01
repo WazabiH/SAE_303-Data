@@ -81,8 +81,12 @@
   
   .Logo-img {
    height: 20; 
+   margin-left: -20;
+
 }
 
 .violet {
   background:#cc4e5d;;
 }
+
+
