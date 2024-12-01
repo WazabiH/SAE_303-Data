@@ -97,13 +97,13 @@
 
 .w40 h2 {
   text-align: center; /* Centre le titre */
-  font-size: 3rem;
+  font-size: 5rem;
   margin-bottom: 20px; /* Ajoute de l'espace sous le titre */
 }
 
 .w60 p {
   text-align: justify; /* Justifie le texte */
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   line-height: 1.8em; /* Espace entre les lignes */
   margin: 0; /* Retire les marges inutiles */
 }
