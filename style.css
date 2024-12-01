@@ -65,31 +65,32 @@
   .item {
       height: 500px; /* Correspond à la hauteur des images */
     }
-    section{
+    .section {
       padding: 100px 0;
-      background:#380047;
-      color:#FFF;
-      }
-      .w25{
-        width: 25%;
-    }
-
-    .flex{ 
+      background: #380047;
+      color: #FFF;
+  }
+  
+  /* Classes pour les éléments */
+  .w25 {
+      width: 25%;
+  }
+  
+  .flex {
       display: flex;
   }
-
-  .gap20{
-    gap:20px ;
-}
-
-  .skill{
-    background-color: white;
-    border-radius: 15px;
-    padding: 20px;
-    box-sizing: border-box;
-}
   
-
+  .gap20 {
+      gap: 20px;
+  }
+  
+  .skill {
+      background-color: white;
+      border-radius: 15px;
+      padding: 20px;
+      box-sizing: border-box;
+      text-align: center;
+  }
     
 
     
