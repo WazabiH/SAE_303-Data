@@ -65,45 +65,13 @@
   .item {
       height: 500px; /* Correspond à la hauteur des images */
     }
-    .section.violet {
-      padding: 50px 0;
-      background: #cc4e5d;
-      margin-top: 50px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-  }
-  
-  
-  .flex {
-      display: flex;
-  }
-  
-  .gap20 {
-      gap: 70px;
-  }
-  
-  .Logo-img {
-   height: 80px; 
-   margin-left: 0;
-   margin-bottom: 30px;
-
-}
-.Nuage-img {
-  width: 100px; /* Largeur de l'image */
-  margin-left: -20; /* Pour centrer l'image facilement */
-}
 
 .boxed{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-h2 {
-  margin-top: 0; /* Éviter les marges par défaut */
-  text-align: center; /* Centrer le texte */
-}
+
 
 
 
