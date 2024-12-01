@@ -38,7 +38,7 @@ header{
 
 /*NAVIGATION*/
 
-nav a{
+/*nav a{
     font-size: 1.8rem;
     color: black;
     margin-left: 4rem;
@@ -84,7 +84,7 @@ nav a.active{
         border-radius: 0.5rem;
         border-bottom: 0.5rem solid #284E7B;
     }
-}
+}*/
 
 .h1 {
     color: #cb4e5c;
@@ -211,48 +211,64 @@ ul li {
     }
 }
 
-/*FOOTER*/
+/* FOOTER */
 .footer {
-    background-color: #ffd7d7; /* Couleur pastel pour correspondre au thème */
-    border-radius: 15px; /* Arrondir les coins */
-    padding: 2rem; /* Ajouter un espacement intérieur */
-    text-align: center; /* Centrer le texte */
-    margin: 2rem auto; /* Ajouter de l'espacement autour du footer */
-    max-width: 1200px; /* Fixer une largeur maximale */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajouter une ombre douce */
-  }
-  
-  .footer-container {
+    background-color: #ffd7d7;
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    margin: 2rem auto;
+    margin-bottom: 3rem;
+    max-width: 1200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container-footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  .footer-logos {
-    display: flex;
-    gap: 2rem; /* Espacement entre les images */
-    justify-content: center;
-    margin-bottom: 1rem; /* Espacement sous les logos */
-  }
-  
-  .footer-logo {
-    max-width: 100px; /* Taille des logos */
+}
+
+.logos-footer {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px; 
+}
+
+.logo-footer-site,
+.logo-footer-cyu {
+    max-width: 150px;
+    max-height: 150px;
     height: auto;
-  }
-  
-  .footer-container p {
-    font-size: 1.2rem;
-    color: #333333; /* Texte sombre pour le contraste */
-    margin: 0.5rem 0; /* Espacement entre les paragraphes */
-  }
-  
-  .footer-container a {
-    color: #cc0000; /* Couleur d'accent pour les liens */
-    text-decoration: none; /* Enlever le soulignement des liens */
+    width: auto;
+    object-fit: contain; 
+}
+
+.container-footer p {
+    font-size: 1.3rem;
+    color: #333333;
+    margin: 0.5rem 0;
+}
+
+.container-footer a {
+    color: #333333; 
+    text-decoration: none;
     font-weight: bold;
-  }
-  
-  .footer-container a:hover {
-    text-decoration: underline; /* Ajouter un effet au survol */
-  }
-  
+}
+
+.navigation-externe{
+    font-size: 1.5rem;
+}
+
+.lien-reseau-sociaux {
+    color: #333333; 
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 1rem; 
+}
+
+.lien-reseau-sociaux:hover {
+    color: #b74b4b;
+    text-decoration: underline;
+}
