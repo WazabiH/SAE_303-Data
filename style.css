@@ -62,6 +62,9 @@
         height: 500px; /* Définissez une hauteur fixe */
         object-fit: cover; /* Adapte l'image pour remplir le conteneur sans distorsion */
     }
+    carousel-inner .item {
+      height: 500px; /* Correspond à la hauteur des images */
+  }
     
   
    
