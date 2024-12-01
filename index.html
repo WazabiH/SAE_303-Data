@@ -10,7 +10,13 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <body class="background-custom"> 
-    
+ <style>
+  body {
+    background: linear-gradient(to right, #9e275f, #c84e89); /* Dégradé orange */
+    color: white;
+    font-family: Arial, sans-serif;
+}
+</style>
   </body>
 </head>
 <body>
@@ -27,16 +33,7 @@
   <div class="container">
     <h2>Les films les plus appréciés</h2>  
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <style> 
-      carousel-img {
-        width: 100%; /* La largeur des images s'adapte au conteneur */
-        height: 500px; /* Définissez une hauteur fixe */
-        object-fit: cover; /* Adapte l'image pour remplir le conteneur sans distorsion */
-    }
-  carousel-img .item {
-      height: 500px; /* Correspond à la hauteur des images */
-  }
-</style>
+
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
