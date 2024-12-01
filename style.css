@@ -66,9 +66,17 @@
       height: 500px; /* Correspond à la hauteur des images */
     }
 
-    .section  {
-    Padding: 100px 0;
-    background-color: #cc4e5d;
+    .section {
+      padding: 50px 0;
+      margin-top: 50px; /* Ajoute un espace de 50px entre le carousel et la section */
+      background: #cc4e5d;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .carousel-inner {
+      margin-bottom: 50px; /* Ajoute un espace de 50px sous le carousel */
     }
 
 .boxed{
