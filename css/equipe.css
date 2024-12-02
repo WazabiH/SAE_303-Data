@@ -1,153 +1,224 @@
-/* Global Styles */
-body {
+
+:root {
+    --primary: #cb4e5c;
+    --primary-light: #e2818c;
+    --secondary: #ecbdc3;
+    --background-light: #ffffff;
+    --text-dark: #333333;
+    --text-light: #f9f9f9;
+  
+  }
+  
+  /* Reset général */
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-dark);
+    background-color: var(--background-light);
+  }
+  
+/* Style de la barre de navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #865353;
+    padding: 10px 20px;
+    position: relative;
+  }
+  
+  .navbar .logo img {
+    height: 50px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
-    background-image: url('../media/fond.jpg'); /* Chemin relatif */
-    background-size: cover; /* L'image couvre tout l'écran */
-    background-position: center; /* Centrer l'image */
-    background-repeat: no-repeat; /* Pas de répétition */
-    color: #000000;
   }
   
-  main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+  .nav-links li {
+    margin: 0 15px;
   }
   
-  /* Hero Section */
-  .hero {
-    text-align: center;
-    padding: 60px 20px;
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s ease;
   }
   
-  .hero h1 {
-    font-size: 48px;
-    color: #cc4e5d;
+  .nav-links a:hover {
+    color: #f39c12;
+  }
+  
+  /* Style pour le titre centré */
+  .navbar .title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 1em;
+    font-family: 'poppin', sans-serif;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    letter-spacing: 2px;
   }
   
-  .hero p {
-    font-size: 18px;
-    font-weight: 600;
-    color: #000000;
+  .navbar .title a {
+    text-decoration: none;
+    color: inherit;
   }
   
-  /* About Team Section */
-  .about-team {
-    text-align: center;
+  
+    /* Bannière */
+    .banner {
+        position: relative;
+        height: 40vh;
+        background: url('../media/bannière.jpg') no-repeat center center/cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .banner-content {
+        text-align: center;
+        color: #ffffff;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+      }
+      
+      .banner-content h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+      }
+  
+  .banner-content p {
+    font-size: 1.5rem;
+  }
+  
+  /* Section Équipe */
+  .team {
+    display: grid;
+    margin-top: 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
     padding: 40px 20px;
-    border-radius: 10px;
-    margin-bottom: 40px;
+    justify-items: center;
   }
   
-  .about-team h2 {
-    font-size: 32px;
-    color: #cc4e5d;
+  .team-member {
+    text-align: center;
+    max-width: 300px;
+  }
+  
+  .profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--secondary);
     margin-bottom: 15px;
   }
   
-  .about-team p {
-    font-size: 18px;
-    line-height: 1.6;
-    font-weight: 600;
-    color: #333;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
- /* Style général des membres de l'équipe */
-.team {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
-    padding: 40px 20px;
-  }
-  
-  /* Membres de l'équipe */
-  .team-member {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 30px;
-    width: 350px;
-    height: 500px;
-    text-align: center;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background-color: rgba(0, 0, 0, 0.7); /* Fond noir semi-transparent */
-    position: relative; /* Nécessaire pour positionner l'icône LinkedIn */
-  }
-  
-  /* Hover effet */
-  .team-member:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 15px rgba(231, 214, 231, 0.5);
-  }
-  
-  /* Image des membres */
-  .team-member img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-  }
-  
-  /* Lien LinkedIn */
-  .team-member a {
-    position: relative;
-    display: block;
-  }
-  
-  /* Icône LinkedIn */
-  .linkedin-icon {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: #0077b5;
-    padding: 10px;
-    border-radius: 50%;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-  
-  .linkedin-icon i {
-    color: white;
-    font-size: 24px;
-  }
-  
-  /* Lorsque le membre de l'équipe est survolé, l'icône LinkedIn devient visible */
-  .team-member:hover .linkedin-icon {
-    opacity: 1;
-  }
-  
-  /* Informations sur les membres */
-  .team-member .info {
-    padding: 10px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-  
-  .team-member h2 {
-    font-size: 24px;
-    margin-bottom: 5px;
-  }
-  
-  .team-member .role {
-    color: #cc4e5d;
-    margin-bottom: 5px;
+  .team-member h3 {
+    font-size: 1.8rem;
+    margin: 10px 0;
   }
   
   .team-member p {
-    font-size: 14px;
-    line-height: 1.5;
+    font-size: 1.2rem;
+    margin: 5px 0;
+  }
+  
+  .linkedin {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 25px;
+    border: 2px solid var(--primary);
+    border-radius: 25px;
+    font-size: 1rem;
+    color: var(--primary);
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .linkedin:hover {
+    background-color: var(--primary);
+    color: var(--background-light);
+  }
+  
+
+/* Style de la section */
+
+
+.equipe-content {
+    text-align: center;
+    color: #974848;
+    text-shadow: 2px 2px 5px rgba(248, 248, 248, 0.7);
+  }
+  
+  .equipe-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+.equipe-content p {
+font-size: 1.5rem;
+}
+
+.team-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px auto;
+    padding: 20px;
+    max-width: 900px;
+    gap: 20px; /* Espacement général entre les éléments de la section */
+  }
+  
+  /* Contenu principal */
+  .team-text .content {
+    display: flex;
+    align-items: center;
+    gap: 50px; /* Espacement entre l'image et le texte */
+  }
+  
+  /* Texte */
+  .team-text p {
+    flex: 1; /* Texte occupe tout l'espace disponible */
+    font-size: 1.1em;
+    line-height: 1.8;
     color: #333;
+    margin: 0; /* Retire les marges inutiles */
+    text-align: justify; /* Améliore la lisibilité */
+    padding-left: 1rem; /* Ajoute un peu d'espacement interne pour un meilleur rendu */
+  }
+  
+  /* Style pour l'image */
+  .team-image {
+    flex-shrink: 0; /* Empêche l'image de rétrécir */
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    animation: float 3s ease-in-out infinite; /* Animation de flottement */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute une ombre légère pour la profondeur */
+  }
+  
+  /* Animation flottante */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #cb4e5c;
+    color: white;
   }
   
