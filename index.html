@@ -1,87 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Héroïnes et Réalités</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <body class="background-custom"> 
-    
+ <style>
+  body {
+            background-color: #f9e3e6; /* Couleur bleu clair */
+            color: #333; /* Couleur du texte pour le contraste */
+            font-family: Arial, sans-serif;
+        }
+</style>
   </body>
-  <style> 
-  ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #cc4e5d;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color:#ecbdc3 ;
-  text-align: center;
-  padding: 18px 20px;
-  text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: white;
-}
-/* Add a gray right border to all list items, except the last item (last-child) */
-li {
-  border-right: 1px solid #bbb;
-}
-
-li:last-child {
-  border-right: none;
-}
-/* Style for the image/logo */
-navbar-logo {
-      width: 5%;  /* Réduit la taille du logo */
-      height: auto; /* Ajuste la hauteur automatiquement */
-      padding: 5px;
-      margin-right: 5%;
-      vertical-align: middle; /* Aligne l'image avec le texte */
-    }
-
-    /* Optional: You can add padding to the first 'li' to space out the logo */
-    li:first-child {
-      padding-left: 20px;
-    }
-  </style>
 </head>
 <body>
   <ul>
-    <li><a href="default.asp"><img src="media/Logi.png" alt="Logo" class="navbar-logo">Film</a></li>
+    <li>
+    <img src="media/Logo.png" alt="Logo" height="90" class="navbar-logo"></li>
+    <li><a href="default.asp">Films</a></li>
     <li><a href="news.asp">Equipe</a></li>
     <li><a href="contact.asp">A propos de</a></li>
     <li><a href="about.asp">Contact</a></li>
-  </ul>
+    </ul>
   <!-- Horizontal -->
-  <div class="slider-container slider-1">
-    <div class="slider">
-      <p>Texte template 1</p>
-      <p>Texte template 2</p>
-      <p>Texte template 3</p>
-      <p>Texte template 4</p>
-      <p>Texte template 1</p>
-      <div class="section violet">  
-        <div class="boxed text-center">
-           <h2>jsp </h2>
-           <div class="flex gap20"> 
+  <div style="margin-bottom: 60px;"></div>
+  <div class="container">
+    <h2>Les films les plus appréciés</h2>  
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+  
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img class="carousel-img" src="media/Hunger.png" alt="Los Angeles" style="width:100%;">
+        </div>
+  
+        <div class="item">
+          <img class="carousel-img" src="media/Vaina.jpeg" alt="Chicago" style="width:100%;">
+        </div>
+      
+        <div class="item">
+          <img class="carousel-img" src="media/Transformer.jpeg" alt="New york" style="width:100%;">
+        </div>
+      </div>
+  
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
   </div>
 
+<div class="section">
+  <div class="boxed"> 
+    <div class="flex"> 
+      <div class="w40">
+        <h2>Qui sommes nous ?</h2>
+      </div>
+      <div class="w60">
+        <p>
+          Nous sommes un groupe d’étudiantes passionnées par le cinéma et engagées pour la représentation des femmes dans les médias.
+          À travers notre projet Héroïnes et Réalités, nous avons voulu mettre en lumière un aspect souvent négligé dans l’industrie cinématographique : la place des femmes à l’écran.
+          Notre site explore et analyse la présence des femmes dans les films en utilisant un outil incontournable : le Bechdel Test.
+          Ce test, bien que simple, permet de révéler des tendances frappantes sur la manière dont les femmes sont représentées dans les histoires que nous regardons au quotidien.
+        </p>
+      </div>
+    </div>
+  </div>
+  
+<div class="section pink">
+  <div class="boxed"> 
+  </div>
+</div>
+</div>
 </head>
 <body>
-  
-
+  <div class="margin-bottom">
+    <h1> hello</h1>
 </body>
+
 </html>
