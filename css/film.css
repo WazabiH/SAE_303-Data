@@ -110,7 +110,24 @@ h1 {
     margin-bottom: 1rem;
 }
 
-/* Conteneur des films */
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Titre principal */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2.5rem;
+    color: #444;
+}
+
+/* Conteneur principal */
 #film-list {
     display: flex;
     flex-wrap: wrap;
@@ -119,85 +136,95 @@ h1 {
     padding: 20px;
 }
 
-/* Style pour chaque film */
+/* Carte de chaque film */
 .film-card {
-    background-color: #f4d9df;
-    border: 1px solid #f4d9df;
+    background-color: #fff;
+    border: 1px solid #ddd;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 250px;
-    transition: transform 0.2s ease-in-out;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .film-card:hover {
-    transform: translateY(-5px);
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Image du film */
 .film-card img {
     width: 100%;
     height: auto;
-    border-bottom: 1px solid #f4d9df;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
-/* Informations du film */
-.film-info {
+/* Contenu du film */
+.film-details {
     padding: 15px;
     text-align: center;
 }
 
-.film-info h2 {
-    font-size: 18px;
-    color: #333;
-    margin: 10px 0 5px;
-}
-
-.film-info p {
-    font-size: 14px;
-    color: #666;
-    margin: 5px 0;
-}
-
-/* Bechdel score */
-.film-info .bechdel-score {
+.film-title {
+    font-size: 1.1rem;
     font-weight: bold;
-    color: #cb4e5c;
+    margin: 10px 0 5px;
+    color: #222;
 }
 
-/* Lien vers IMDB */
-.film-info a {
-    display: inline-block;
+.film-year {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.film-bechdel {
     margin-top: 10px;
-    text-decoration: none;
-    color: #007BFF;
-    font-size: 14px;
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    display: inline-block;
 }
 
-.film-info a:hover {
-    text-decoration: underline;
+/* Couleurs pour le Bechdel Score */
+.film-bechdel[data-score="3"] {
+    background-color: #4CAF50; /* Vert pour un score élevé */
 }
 
-/* Conteneur de recherche */
+.film-bechdel[data-score="2"] {
+    background-color: #FFC107; /* Jaune pour un score moyen */
+}
+
+.film-bechdel[data-score="1"] {
+    background-color: #FF5722; /* Orange pour un score faible */
+}
+
+.film-bechdel[data-score="0"] {
+    background-color: #F44336; /* Rouge pour un score de 0 */
+}
+
+/* Barre de recherche */
 #search-container {
     text-align: center;
-    margin: 20px 20px;
+    margin: 20px 0;
 }
 
 #search-bar {
     width: 80%;
+    max-width: 500px;
     padding: 10px;
-    font-size: 16px;
+    font-size: 1rem;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 #search-bar:focus {
     outline: none;
-    border-color: #007BFF;
-    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
 }
+
 
 /* FOOTER */
 .footer {
