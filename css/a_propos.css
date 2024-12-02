@@ -22,159 +22,60 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+/* Style de la barre de navigation 
+.main-navigation {
     background-color: #cc4e5d;
     display: flex;
     align-items: center;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.navigation-logo {
     display: flex;
     align-items: center;
-    color:#ecbdc3 ;
+}
+
+.navigation-logo-img {
+    width: 30px; 
+    height: auto; 
+    margin-right: 10px;
+    object-fit: contain;
+}
+
+.navigation-title a {
+    color: #ecbdc3;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navigation-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navigation-item {
+    margin: 0;
+}
+
+.navigation-item a {
+    color: #ecbdc3;
     text-align: center;
     padding: 18px 20px;
     text-decoration: none;
-  }
-  li a:hover {
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.navigation-item a:hover {
     background-color: white;
-  }
-  navbar-logo {
-    width: 30px;  /* Réduit la taille du logo */
-    height: auto; /* Ajuste la hauteur automatiquement */
-    margin-right: 10px;
-    object-fit: contain;
-  }
-  
-      /* Optional: You can add padding to the first 'li' to space out the logo */
-      li:first-child {
-        padding-left: 20px;
-      }
-  .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #cb4e5c;
-      padding: 10px 20px;
-      position: relative;
-    }
-    
-    .navbar .logo img {
-      height: 50px;
-    }
-    
-    .nav-links {
-      list-style: none;
-      display: flex;
-      margin: 0;
-      padding: 0;
-    }
-    
-    .nav-links li {
-      margin: 0 15px;
-    }
-    
-    .nav-links a {
-      text-decoration: none;
-      color: #fff;
-      font-size: 16px;
-      transition: color 0.3s ease;
-    }
-    
-    .nav-links a:hover {
-      color: #f39c12;
-    }
-    
-    /* Style pour le titre centré */
-    .navbar .title {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      color: #fff;
-      font-size: 1em;
-      font-family: 'poppin', sans-serif;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-    }
-    
-    .navbar .title a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-      /* Style pour le titre centré */
-  .navbar .title {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #fff;
-    font-size: 1em;
-    font-family: 'poppin', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-  }
-  
-  .navbar .title a {
-    text-decoration: none;
-    color: inherit;
-  }
-/*NAVIGATION*/
-
-/*nav a{
-    font-size: 1.8rem;
-    color: black;
-    margin-left: 4rem;
-    font-weight: 500;
-    transition: 0.3s ease;
-    border-bottom: 3px solid transparent;
+    color: #cc4e5d;
 }
+*/
 
-nav a:hover,
-nav a.active{
-    color: #014886;
-    border-bottom: 3px solid #014886;
-}
-
-@media(max-width:995px){
-    nav{
-        position: absolute;
-        display: none;
-        top: 0;
-        right: 0;
-        width: 40%;
-        border-left: 3px solid #284E7B;
-        border-bottom: 3px solid #b74b4b;
-        border-bottom-left-radius: 2rem;
-        padding: 1rem solid;
-        background-color:  #B0C4D8;
-        border-top: 0.1rem solid rgba(0,0,0,0.1);
-        }
-
-    nav.active{
-        display: block;
-    }
-
-    nav a{
-        display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
-    }
-
-    nav a:hover,
-    nav a.active{
-        padding: 1rem;
-        border-radius: 0.5rem;
-        border-bottom: 0.5rem solid #284E7B;
-    }
-}*/
 
 .h1 {
     color: #cb4e5c;
@@ -262,9 +163,6 @@ nav a.active{
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-
-
-
 
 .about-details-container {
     flex: 1;
