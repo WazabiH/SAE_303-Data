@@ -94,64 +94,66 @@ li a:hover {
 }
 
 
-
-/**Section**/ 
-
+/** Section **/
 .section {
-  padding: 40px 20px;
+  padding: 20px;
   margin: 20px auto;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 1200px; /* Limite la largeur pour un affichage centré */
+  max-width: 1200px;
+  background-color: #f8d7da; /* Fond rose doux */
+  border-radius: 10px; /* Coins arrondis */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
 }
 
-.section.pink {
-  background-color: #ffe6f0; /* Couleur de fond pour sections roses */
-}
-
+/* Flexbox pour disposition */
 .flex {
   display: flex;
-  gap: 20px; /* Espacement entre les colonnes */
-  flex-wrap: wrap; /* Permet de s'adapter sur des petits écrans */
+  align-items: flex-start; /* Les éléments ne sont pas regroupés */
+  gap: 20px;
 }
 
 .w40, .w60 {
   flex: 1;
-  padding: 10px;
 }
 
 .w40 {
-  max-width: 40%; /* S'assure que la largeur reste proportionnelle */
+  max-width: 40%; /* Largeur fixe */
 }
 
 .w60 {
   max-width: 60%;
 }
 
+/* Titres */
 h2 {
-  font-size: 24px;
+  font-size: 32px; /* Agrandissement des titres */
   font-weight: 700;
-  color: #cb4e5c; /* Rouge pour les titres */
+  color: #cb4e5c; /* Couleur rouge */
   margin-bottom: 20px;
+  font-family: "Poppins", sans-serif; /* Police pour le titre */
 }
 
+/* Texte */
 p {
   margin-bottom: 20px;
-  text-align: justify; /* Améliore la lisibilité */
+  font-size: 17px; /* Taille spécifique */
+  line-height: 1.6; /* Meilleure lisibilité */
+  text-align: justify; /* Alignement justifié */
+  font-family: "Poppins", sans-serif; /* Police Poppins */
 }
 
+/* Images */
 .img-responsive {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
+  transition: transform 0.3s ease; /* Animation au survol */
 }
 
-.text-center {
-  text-align: center;
-  font-style: italic;
+.img-responsive:hover {
+  transform: scale(1.05); /* Zoom au survol */
 }
 
+/* Boutons */
 .btn {
   display: inline-block;
   padding: 10px 20px;
@@ -166,14 +168,19 @@ p {
   background-color: #e2818c;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
   .flex {
-    flex-direction: column; /* Les colonnes deviennent des lignes sur petits écrans */
+    flex-direction: column; /* Éléments empilés sur petit écran */
   }
+
   .w40, .w60 {
-    max-width: 100%; /* Chaque bloc occupe toute la largeur */
+    max-width: 100%; /* Largeur pleine sur petit écran */
   }
 }
+
+
+
 
 
 
