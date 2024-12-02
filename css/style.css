@@ -1,148 +1,90 @@
 
 
- 
+body {
+  font-family: 'Poppins', sans-serif;
+  color: white; /* Couleur du texte */
+  min-height: 100vh; /* Hauteur minimum couvrant tout l'écran */
+  margin: 0; /* Supprime les marges par défaut */
+  padding: 0;
+}
 
-  
+header {
+  width: 100%;
+  background-color: #f8f8f8; /* Couleur d'arrière-plan, modifiable */
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre, optionnel */
+}
 
-    /* Conteneur global pour élargir la page */
-    container {
-      max-width: 1200px; /* Ajustez cette valeur pour agrandir */
-      margin: 0 auto; /* Centrer la page */
-      padding: 0 15px; /* Espace sur les bords */
-    }
-    
-    background-custom {
-      background-color: #ecbdc3; ; /* AliceBlue, remplacez par votre couleur */
-      font-family: 'Poppins', sans-serif;
-      color: white; /* Couleur du texte, ajustez si nécessaire */
-      min-height: 100vh; /* Assurez-vous que la hauteur couvre tout l'écran */
-      margin: 0; /* Supprime les marges par défaut */
-      padding: 0;
-    }
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-   
-  /* Style de la barre de navigation */
+.logo img {
+  height: 50px; /* Ajustez la hauteur selon vos besoins */
+}
 
+.title {
+  flex: 1; /* Permet au titre de prendre l'espace restant */
+  text-align: center;
+}
 
-ul {
-  list-style-type: none;
+.title a {
+  text-decoration: none;
+  color: #333; /* Couleur du texte */
+  font-size: 24px; /* Taille du texte, ajustable */
+  font-weight: bold;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Espacement entre les liens */
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  background-color: #cc4e5d;
-  display: flex;
-  align-items: center;
 }
 
-li {
-  float: left;
-}
-
-li a {
-  display: flex;
-  align-items: center;
-  color:#ecbdc3 ;
-  text-align: center;
-  padding: 18px 20px;
+.navbar ul li a {
   text-decoration: none;
-}
-li a:hover {
-  background-color: white;
-}
-navbar-logo {
-  width: 30px;  /* Réduit la taille du logo */
-  height: auto; /* Ajuste la hauteur automatiquement */
-  margin-right: 10px;
-  object-fit: contain;
+  color: #333; /* Couleur des liens */
+  font-size: 18px;
 }
 
-    /* Optional: You can add padding to the first 'li' to space out the logo */
-    li:first-child {
-      padding-left: 20px;
-    }
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #cb4e5c;
-    padding: 10px 20px;
-    position: relative;
-  }
-  
-  .navbar .logo img {
-    height: 50px;
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .nav-links li {
-    margin: 0 15px;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 16px;
-    transition: color 0.3s ease;
-  }
-  
-  .nav-links a:hover {
-    color: #f39c12;
-  }
-  
-  /* Style pour le titre centré */
-  .navbar .title {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #fff;
-    font-size: 1em;
-    font-family: 'poppin', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-  }
-  
-  .navbar .title a {
-    text-decoration: none;
-    color: inherit;
-  }
-  
+.navbar ul li a:hover {
+  color: #007BFF; /* Couleur au survol */
+}
 
-    .carousel-img {
-        width: 100%; /* La largeur des images s'adapte au conteneur */
-        height: 500px; /* Définissez une hauteur fixe */
-        object-fit: cover; /* Adapte l'image pour remplir le conteneur sans distorsion */
-        object-fit: contain; /* Assure que l'image entière est visible sans découpe */
-    background-color: #000; 
-    }
 
-  .item {
-      height: 500px; /* Correspond à la hauteur des images */
-      display: flex; /* Pour centrer verticalement les images si elles sont plus petites */
-    justify-content: center; /* Centre horizontalement l'image */
-    align-items: center; /* Centre verticalement l'image */
-    overflow: hidden;
-    }
+.carousel-img {
+  width: 100%; /* La largeur des images s'adapte au conteneur */
+  height: 500px; /* Définissez une hauteur fixe */
+  object-fit: cover; /* Adapte l'image pour remplir le conteneur sans distorsion */
+  background-color: #000; 
+}
 
-    .section {
-      padding: 15px 0;
-      margin-top: 70px; /* Ajoute un espace de 50px entre le carousel et la section */
-      background: #cc4e5d;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    
-    .carousel-inner {
-      margin-bottom: 50px; /* Ajoute un espace de 50px sous le carousel */
-    }
+.item {
+  height: 500px; /* Correspond à la hauteur des images */
+  display: flex; /* Pour centrer verticalement les images si elles sont plus petites */
+  justify-content: center; /* Centre horizontalement l'image */
+  align-items: center; /* Centre verticalement l'image */
+  overflow: hidden;
+}
 
-.boxed{
+.section {
+  padding: 15px 0;
+  margin-top: 70px; /* Ajoute un espace entre le carousel et la section */
+  background: #cc4e5d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel-inner {
+  margin-bottom: 50px; /* Ajoute un espace sous le carousel */
+}
+
+.boxed {
   max-width: 1280px;
   margin-inline: auto;
 }
@@ -171,21 +113,11 @@ navbar-logo {
   margin: 0; /* Retire les marges inutiles */
 }
 
+.pink {
+  background: #ecbdc3;
+  color: #cc4e5d;
+}
 
- .pink {
-  background:#ecbdc3;
-  color:  #cc4e5d;
- }
-
- .margin-bottom {
+.margin-bottom {
   margin-bottom: 100px;
- }
-
-
-
-
-
-
-
-
-
+}
