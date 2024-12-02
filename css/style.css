@@ -1,11 +1,11 @@
 
-
 body {
-  font-family: 'Poppins', sans-serif;
-  color: white; /* Couleur du texte */
-  min-height: 100vh; /* Hauteur minimum couvrant tout l'écran */
-  margin: 0; /* Supprime les marges par défaut */
+  font-family: 'poppins', sans-serif;
+  line-height: 1.6;
+  margin: 0;
   padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
 }
 
 header {
@@ -71,7 +71,7 @@ li a:hover {
   background-color: white;
 }
 
-
+/**Caroussel*/
 
 .carousel-img {
   width: 100%; /* La largeur des images s'adapte au conteneur */
@@ -88,56 +88,100 @@ li a:hover {
   overflow: hidden;
 }
 
-.section {
-  padding: 15px 0;
-  margin-top: 70px; /* Ajoute un espace entre le carousel et la section */
-  background: #cc4e5d;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
 .carousel-inner {
   margin-bottom: 50px; /* Ajoute un espace sous le carousel */
 }
 
-.boxed {
-  max-width: 1280px;
-  margin-inline: auto;
+
+
+/**Section**/ 
+
+.section {
+  padding: 40px 20px;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 1200px; /* Limite la largeur pour un affichage centré */
+}
+
+.section.pink {
+  background-color: #ffe6f0; /* Couleur de fond pour sections roses */
 }
 
 .flex {
   display: flex;
-  justify-content: center; /* Centre les éléments enfants horizontalement */
-  align-items: center; /* Centre les éléments verticalement */
-  flex-wrap: wrap; /* Permet de s'adapter si les éléments débordent */
+  gap: 20px; /* Espacement entre les colonnes */
+  flex-wrap: wrap; /* Permet de s'adapter sur des petits écrans */
 }
 
 .w40, .w60 {
-  padding: 10px; /* Ajoute de l'espace intérieur */
+  flex: 1;
+  padding: 10px;
 }
 
-.w40 h2 {
-  text-align: center; /* Centre le titre */
-  font-size: 5rem;
-  margin-bottom: 20px; /* Ajoute de l'espace sous le titre */
+.w40 {
+  max-width: 40%; /* S'assure que la largeur reste proportionnelle */
 }
 
-.w60 p {
-  text-align: justify; /* Justifie le texte */
-  font-size: 2.5rem;
-  line-height: 1.8em; /* Espace entre les lignes */
-  margin: 0; /* Retire les marges inutiles */
+.w60 {
+  max-width: 60%;
 }
 
-.pink {
-  background: #ecbdc3;
-  color: #cc4e5d;
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #cb4e5c; /* Rouge pour les titres */
+  margin-bottom: 20px;
 }
 
-.margin-bottom {
-  margin-bottom: 100px;
+p {
+  margin-bottom: 20px;
+  text-align: justify; /* Améliore la lisibilité */
 }
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.text-center {
+  text-align: center;
+  font-style: italic;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #cb4e5c;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e2818c;
+}
+
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column; /* Les colonnes deviennent des lignes sur petits écrans */
+  }
+  .w40, .w60 {
+    max-width: 100%; /* Chaque bloc occupe toute la largeur */
+  }
+}
+
+
+
+
+
+
+
+
 
 /* FOOTER */
 .footer {
