@@ -35,17 +35,19 @@ header {
 .title a {
   text-decoration: none;
   color: #ffffff; /* Couleur du texte */
-  font-size: 2rem; /* Taille du texte, ajustable */
+  font-size: 1.6rem; /* Taille du texte, ajustable */
   font-weight: bold;
   text-align: center;
 }
 
 .navbar ul {
-  list-style: none;
-  display: flex;
-  gap: 20px; /* Espacement entre les liens */
+  list-style-type: none;
   margin: 0;
   padding: 0;
+  overflow: hidden;
+  background-color: #cc4e5d;
+  display: flex;
+  align-items: center;
 }
 
 .navbar ul li a {
