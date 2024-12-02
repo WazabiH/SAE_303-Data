@@ -1,49 +1,49 @@
-// Charger le fichier JSON et afficher les films
-fetch('../data/movies.json') // Ajuster le chemin selon la structure du projet
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Erreur lors du chargement du fichier JSON');
-        }
-        return response.json();
-    })
-    .then(data => {
-        const filmList = document.getElementById('film-list');
-        const searchBar = document.getElementById('search-bar');
+// Sélectionne les éléments nécessaires
+const searchBar = document.getElementById("search-bar");
+const filmList = document.getElementById("film-list");
 
-        // Fonction pour afficher les films
-        function displayFilms(films) {
-            filmList.innerHTML = ''; // Nettoie la liste avant d'afficher
-            films.forEach(movie => {
-                const filmCard = document.createElement('div');
-                filmCard.className = 'film-card';
+// Fonction pour charger le fichier JSON
+async function loadFilms() {
+    try {
+        const response = await fetch("../data/films.json");
+        const films = await response.json();
+        displayFilms(films); // Affiche les films au chargement
+        setupSearch(films); // Configure la recherche
+    } catch (error) {
+        console.error("Erreur lors du chargement des films :", error);
+    }
+}
 
-                filmCard.innerHTML = `
-                    <img src="${movie.poster_path}" alt="${movie.title}">
-                    <div class="film-info">
-                        <h2>${movie.title_fr || movie.title} (${movie.year})</h2>
-                        <p>Bechdel Score : <span class="bechdel-score">${movie.bechdel_score}</span></p>
-                        <p>Langue : ${movie.lang}</p>
-                        <p>Type de Média : ${movie.media_type}</p>
-                        <a href="https://www.imdb.com/title/${movie.imdbid_full}" target="_blank">Voir sur IMDb</a>
-                    </div>
-                `;
-                filmList.appendChild(filmCard);
-            });
-        }
+// Fonction pour afficher les films
+function displayFilms(films) {
+    filmList.innerHTML = ""; // Vide la liste des films
+    films.forEach(film => {
+        const filmItem = `
+            <div class="film-card">
+                <img src="${film.poster_path}" alt="${film.title_fr}" class="film-poster">
+                <div class="film-info">
+                    <h2>${film.title_fr} (${film.year})</h2>
+                    <p>Score Bechdel : ${film.bechdel_score}</p>
+                    <p>Langue : ${film.lang.toUpperCase()}</p>
+                </div>
+            </div>
+        `;
+        filmList.innerHTML += filmItem; // Ajoute le film à la liste
+    });
+}
 
-        // Affiche initialement tous les films
-        displayFilms(data);
-
-        // Ajoute un événement pour filtrer les films
-        searchBar.addEventListener('input', (event) => {
-            const searchTerm = event.target.value.toLowerCase();
-            const filteredFilms = data.filter(movie => 
-                movie.title.toLowerCase().includes(searchTerm) || 
-                (movie.title_fr && movie.title_fr.toLowerCase().includes(searchTerm)) ||
-                movie.lang.toLowerCase().includes(searchTerm) ||
-                movie.media_type.toLowerCase().includes(searchTerm)
-            );
+// Fonction pour configurer la recherche
+function setupSearch(films) {
+    searchBar.addEventListener("input", () => {
+        const query = searchBar.value.trim(); // Récupère la recherche
+        if (!isNaN(query) && query !== "") {
+            const filteredFilms = films.filter(film => film.bechdel_score === parseInt(query));
             displayFilms(filteredFilms);
-        });
-    })
-    .catch(error => console.error('Erreur:', error));
+        } else if (query === "") {
+            displayFilms(films); // Affiche tous les films si la barre est vide
+        }
+    });
+}
+
+// Charge les films au chargement de la page
+loadFilms();
