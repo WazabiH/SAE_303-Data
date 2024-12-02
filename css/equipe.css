@@ -255,14 +255,16 @@ font-size: 1.5rem;
   
 /* FOOTER */
 .footer {
-  background-color: #ffd7d7;
-  border-radius: 15px;
   padding: 2rem;
   text-align: center;
   margin: 2rem auto;
-  margin-bottom: 3rem;
-  max-width: 1200px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 90%; 
+}
+
+@media (min-width: 768px) {
+  .footer {
+      max-width: 1000px; 
+  }
 }
 
 .container-footer {
@@ -280,8 +282,8 @@ font-size: 1.5rem;
 
 .logo-footer-site,
 .logo-footer-cyu {
-  max-width: 150px;
-  max-height: 150px;
+  max-width: 160px;
+  max-height: 160px;
   height: auto;
   width: auto;
   object-fit: contain; 
@@ -314,4 +316,3 @@ font-size: 1.5rem;
   color: #b74b4b;
   text-decoration: underline;
 }
-  
