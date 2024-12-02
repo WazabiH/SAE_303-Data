@@ -1,0 +1,279 @@
+
+:root {
+    --primary: #cb4e5c;
+    --primary-light: #e2818c;
+    --secondary: #ecbdc3;
+    --background-light: #ffffff;
+    --text-dark: #333333;
+    --text-light: #f9f9f9;
+  
+  }
+  
+  /* Reset général */
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-dark);
+    background-color: var(--background-light);
+  }
+  
+/* Style de la barre de navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #865353;
+    padding: 10px 20px;
+    position: relative;
+  }
+  
+  .navbar .logo img {
+    height: 50px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #f39c12;
+  }
+  
+  /* Style pour le titre centré */
+  .navbar .title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 1em;
+    font-family: 'poppin', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .navbar .title a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  
+    /* Bannière */
+    .banner {
+        position: relative;
+        height: 40vh;
+        background: url('../media/bannière.jpg') no-repeat center center/cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .banner-content {
+        text-align: center;
+        color: #ffffff;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+      }
+      
+      .banner-content h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+      }
+  
+  .banner-content p {
+    font-size: 1.5rem;
+  }
+  
+  /* Section Équipe */
+  .team {
+    display: grid;
+    margin-top: 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    padding: 40px 20px;
+    justify-items: center;
+  }
+  
+  .team-member {
+    text-align: center;
+    max-width: 300px;
+  }
+  
+  .profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--secondary);
+    margin-bottom: 15px;
+  }
+  
+  .team-member h3 {
+    font-size: 1.8rem;
+    margin: 10px 0;
+  }
+  
+  .team-member p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+  }
+  
+  .linkedin {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 25px;
+    border: 2px solid var(--primary);
+    border-radius: 25px;
+    font-size: 1rem;
+    color: var(--primary);
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .linkedin:hover {
+    background-color: var(--primary);
+    color: var(--background-light);
+  }
+  
+
+/* Style de la section */
+
+
+.equipe-content {
+    text-align: center;
+    color: #974848;
+    text-shadow: 2px 2px 5px rgba(248, 248, 248, 0.7);
+  }
+  
+  .equipe-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+.equipe-content p {
+font-size: 1.5rem;
+}
+
+.team-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px auto;
+    padding: 20px;
+    max-width: 900px;
+    gap: 20px; /* Espacement général entre les éléments de la section */
+  }
+  
+  /* Contenu principal */
+  .team-text .content {
+    display: flex;
+    align-items: center;
+    gap: 50px; /* Espacement entre l'image et le texte */
+  }
+  
+  /* Texte */
+  .team-text p {
+    flex: 1; /* Texte occupe tout l'espace disponible */
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #333;
+    margin: 0; /* Retire les marges inutiles */
+    text-align: justify; /* Améliore la lisibilité */
+    padding-left: 1rem; /* Ajoute un peu d'espacement interne pour un meilleur rendu */
+  }
+  
+  /* Style pour l'image */
+  .team-image {
+    flex-shrink: 0; /* Empêche l'image de rétrécir */
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    animation: float 3s ease-in-out infinite; /* Animation de flottement */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute une ombre légère pour la profondeur */
+  }
+  
+  /* Animation flottante */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  
+/* FOOTER */
+.footer {
+  background-color: #ffd7d7;
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  margin: 2rem auto;
+  margin-bottom: 3rem;
+  max-width: 1200px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logos-footer {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  gap: 20px; 
+}
+
+.logo-footer-site,
+.logo-footer-cyu {
+  max-width: 150px;
+  max-height: 150px;
+  height: auto;
+  width: auto;
+  object-fit: contain; 
+}
+
+.container-footer p {
+  font-size: 1.3rem;
+  color: #333333;
+  margin: 0.5rem 0;
+}
+
+.container-footer a {
+  color: #333333; 
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navigation-externe{
+  font-size: 1.5rem;
+}
+
+.lien-reseau-sociaux {
+  color: #333333; 
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 1rem; 
+}
+
+.lien-reseau-sociaux:hover {
+  color: #b74b4b;
+  text-decoration: underline;
+}
+  
