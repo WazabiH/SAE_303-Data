@@ -23,57 +23,95 @@ body {
 }
 
 /* Style de la barre de navigation */
-.main-navigation {
-    background-color: #cc4e5d;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-}
 
-.navigation-logo {
-    display: flex;
-    align-items: center;
-}
 
-.navigation-logo-img {
-    width: 30px; 
-    height: auto; 
-    margin-right: 10px;
-    object-fit: contain;
-}
-
-.navigation-title a {
-    color: #ecbdc3;
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.navigation-menu {
+.nav-ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    overflow: hidden;
+    background-color: #cc4e5d;
     display: flex;
     align-items: center;
-}
-
-.navigation-item {
-    margin: 0;
-}
-
-.navigation-item a {
-    color: #ecbdc3;
+  }
+  
+  .li-nav {
+    float: left;
+  }
+  
+  .li-nav a {
+    display: flex;
+    align-items: center;
+    color:#ecbdc3 ;
     text-align: center;
     padding: 18px 20px;
     text-decoration: none;
-    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-}
-
-.navigation-item a:hover {
+  }
+  .li-nav a:hover {
     background-color: white;
-    color: #cc4e5d;
-}
+  }
+  navbar-logo {
+    width: 30px;  /* Réduit la taille du logo */
+    height: auto; /* Ajuste la hauteur automatiquement */
+    margin-right: 10px;
+    object-fit: contain;
+  }
+  
+      /* Optional: You can add padding to the first 'li' to space out the logo */
+      .li-nav:first-child {
+        padding-left: 20px;
+      }
+  .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #cb4e5c;
+      padding: 10px 20px;
+      position: relative;
+    }
+    
+    .navbar .logo-nav img {
+      height: 50px;
+    }
+    
+    .nav-links {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .nav-links li {
+      margin: 0 15px;
+    }
+    
+    .nav-links a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+    
+    .nav-links a:hover {
+      color: #f39c12;
+    }
+    
+    /* Style pour le titre centré */
+    .navbar .title-nav {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #fff;
+      font-size: 1em;
+      font-family: 'poppin', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    
+    .navbar .title-nav a {
+      text-decoration: none;
+      color: inherit;
+    }
 
 
 
