@@ -10,9 +10,8 @@ body {
 
 header {
   width: 100%;
-  background-color: #f8f8f8; /* Couleur d'arrière-plan, modifiable */
+  background-color: #cb4e5c; /* Couleur d'arrière-plan, modifiable */
   padding: 10px 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre, optionnel */
 }
 
 .navbar {
@@ -22,19 +21,24 @@ header {
 }
 
 .logo img {
-  height: 50px; /* Ajustez la hauteur selon vos besoins */
+  height: 6rem; /* Ajustez la hauteur selon vos besoins */
 }
 
 .title {
   flex: 1; /* Permet au titre de prendre l'espace restant */
   text-align: center;
+  color: #fff;
+  font-family: 'poppin', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .title a {
   text-decoration: none;
-  color: #333; /* Couleur du texte */
-  font-size: 24px; /* Taille du texte, ajustable */
+  color: #ffffff; /* Couleur du texte */
+  font-size: 2rem; /* Taille du texte, ajustable */
   font-weight: bold;
+  text-align: center;
 }
 
 .navbar ul {
@@ -47,13 +51,26 @@ header {
 
 .navbar ul li a {
   text-decoration: none;
-  color: #333; /* Couleur des liens */
-  font-size: 18px;
+  color: #e2818c; /* Couleur des liens */
+  font-size: 16px;
 }
 
-.navbar ul li a:hover {
-  color: #007BFF; /* Couleur au survol */
+li {
+  float: left;
 }
+
+li a {
+  display: flex;
+  align-items: center;
+  color:#ecbdc3 ;
+  text-align: center;
+  padding: 18px 20px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: white;
+}
+
 
 
 .carousel-img {
