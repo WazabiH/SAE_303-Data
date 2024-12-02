@@ -18,11 +18,49 @@
   }
   
 /* Style de la barre de navigation */
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #cc4e5d;
+  display: flex;
+  align-items: center;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: flex;
+  align-items: center;
+  color:#ecbdc3 ;
+  text-align: center;
+  padding: 18px 20px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: white;
+}
+navbar-logo {
+  width: 30px;  /* Réduit la taille du logo */
+  height: auto; /* Ajuste la hauteur automatiquement */
+  margin-right: 10px;
+  object-fit: contain;
+}
+
+    /* Optional: You can add padding to the first 'li' to space out the logo */
+    li:first-child {
+      padding-left: 20px;
+    }
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #865353;
+    background-color: #cb4e5c;
     padding: 10px 20px;
     position: relative;
   }
