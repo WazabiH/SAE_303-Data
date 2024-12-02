@@ -61,9 +61,16 @@
         width: 100%; /* La largeur des images s'adapte au conteneur */
         height: 500px; /* Définissez une hauteur fixe */
         object-fit: cover; /* Adapte l'image pour remplir le conteneur sans distorsion */
+        object-fit: contain; /* Assure que l'image entière est visible sans découpe */
+    background-color: #000; 
     }
+
   .item {
       height: 500px; /* Correspond à la hauteur des images */
+      display: flex; /* Pour centrer verticalement les images si elles sont plus petites */
+    justify-content: center; /* Centre horizontalement l'image */
+    align-items: center; /* Centre verticalement l'image */
+    overflow: hidden;
     }
 
     .section {
