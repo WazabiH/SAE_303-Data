@@ -39,37 +39,59 @@ header{
 /* Style de la barre de navigation */
 
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+/* Style de la barre de navigation */
+.main-navigation {
     background-color: #cc4e5d;
     display: flex;
     align-items: center;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.navigation-logo {
     display: flex;
     align-items: center;
-    color:#ecbdc3 ;
-    text-align: center;
-    padding: 18px 20px;
-    text-decoration: none;
-  }
-  li a:hover {
-    background-color: white;
-  }
-  navbar-logo {
-    width: 30px;  /* Réduit la taille du logo */
+}
+
+.navigation-logo-img {
+    width: 30px; /* Taille du logo */
     height: auto; /* Ajuste la hauteur automatiquement */
     margin-right: 10px;
     object-fit: contain;
-  }
+}
+
+.navigation-title a {
+    color: #ecbdc3;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navigation-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navigation-item {
+    margin: 0;
+}
+
+.navigation-item a {
+    color: #ecbdc3;
+    text-align: center;
+    padding: 18px 20px;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.navigation-item a:hover {
+    background-color: white;
+    color: #cc4e5d;
+}
+
 
 .h1 {
     color: #cb4e5c;
