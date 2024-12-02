@@ -13,9 +13,11 @@ function displayFilms(filteredFilms) {
 
         filmDiv.innerHTML = `
             <img src="${film.poster_path}" alt="${film.title}" class="film-poster">
-            <h2>${film.title_fr || film.title}</h2>
-            <p>Année : ${film.year}</p>
+            <h2>${film.title_fr || film.title} (${film.year})</h2>
             <p>Bechdel Score : ${film.bechdel_score}</p>
+            <p>Langue : ${film.lang}</p>
+            <p>Type de Média : ${film.media_type}</p>
+            <a href="https://www.imdb.com/title/${film.imdbid_full}" target="_blank">Voir sur IMDb</a>
         `;
 
         filmList.appendChild(filmDiv);
