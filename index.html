@@ -1,62 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Héroïnes et Réalités</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<<<<<<< HEAD
+  <link rel="stylesheet" href="css/style.css">
+=======
   <link rel="icon" type="image/x-icon" href="/media/favicon.ico">
+>>>>>>> 3583bd341caf3b480d558b140778d3b5a827e38b
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <body class="background-custom"> 
- <style>
-  body {
-            background-color: #f9e3e6; /* Couleur bleu clair */
-            color: #333; /* Couleur du texte pour le contraste */
-            font-family: Arial, sans-serif;
-        }
-</style>
-  </body>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body class="background-custom">
+  
+  <!-- Navigation -->
   <ul>
     <li>
-    <img src="media/Logo.png" alt="Logo" height="90" class="navbar-logo"></li>
-    <li><a href="default.asp">Films</a></li>
-    <li><a href="news.asp">Equipe</a></li>
-    <li><a href="contact.asp">A propos de</a></li>
-    <li><a href="about.asp">Contact</a></li>
-    </ul>
-  <!-- Horizontal -->
+      <img src="media/Logo.png" alt="Logo" height="90" class="navbar-logo">
+    </li>
+    <li><a href="film.html">Films</a></li>
+    <li><a href="equipe.html">Équipe</a></li>
+    <li><a href="a-propos.html">À propos de</a></li>
+  </ul>
+
+  <!-- Carousel Section -->
   <div style="margin-bottom: 60px;"></div>
   <div class="container">
-    <h2>Les films les plus appréciés</h2>  
+    <h2 class="text-center">Les films les plus appréciés</h2>
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
-
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
       </ol>
   
-      <!-- Wrapper for slides -->
       <div class="carousel-inner">
         <div class="item active">
-          <img class="carousel-img" src="media/Hunger.png" alt="Los Angeles" style="width:100%;">
+          <img class="carousel-img" src="media/Hunger.png" alt="Hunger Games">
         </div>
-  
         <div class="item">
-          <img class="carousel-img" src="media/Vaina.jpeg" alt="Chicago" style="width:100%;">
+          <img class="carousel-img" src="media/Vaina.jpeg" alt="Vaiana">
         </div>
-      
         <div class="item">
-          <img class="carousel-img" src="media/Transformer.jpeg" alt="New york" style="width:100%;">
+          <img class="carousel-img" src="media/Transformer.jpeg" alt="Transformers">
         </div>
       </div>
   
-      <!-- Left and right controls -->
       <a class="left carousel-control" href="#myCarousel" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left"></span>
         <span class="sr-only">Previous</span>
@@ -68,32 +59,54 @@
     </div>
   </div>
 
-<div class="section">
-  <div class="boxed"> 
-    <div class="flex"> 
-      <div class="w40">
-        <h2>Qui sommes nous ?</h2>
-      </div>
-      <div class="w60">
-        <p>
-          Nous sommes un groupe d’étudiantes passionnées par le cinéma et engagées pour la représentation des femmes dans les médias.
-          À travers notre projet Héroïnes et Réalités, nous avons voulu mettre en lumière un aspect souvent négligé dans l’industrie cinématographique : la place des femmes à l’écran.
-          Notre site explore et analyse la présence des femmes dans les films en utilisant un outil incontournable : le Bechdel Test.
-          Ce test, bien que simple, permet de révéler des tendances frappantes sur la manière dont les femmes sont représentées dans les histoires que nous regardons au quotidien.
-        </p>
+  <!-- About Section -->
+  <div class="section">
+    <div class="boxed">
+      <div class="flex">
+        <div class="w40">
+          <h2>Qui sommes nous ?</h2>
+        </div>
+        <div class="w60">
+          <p>
+            Nous sommes un groupe d’étudiantes passionnées par le cinéma et engagées pour la représentation des femmes dans les médias.
+            À travers notre projet *Héroïnes et Réalités*, nous avons voulu mettre en lumière un aspect souvent négligé dans l’industrie cinématographique : la place des femmes à l’écran.
+          </p>
+        </div>
       </div>
     </div>
   </div>
-  
-<div class="section pink">
-  <div class="boxed"> 
-  </div>
-</div>
-</div>
-</head>
-<body>
-  <div class="margin-bottom">
-    <h1> hello</h1>
-</body>
 
+  <!-- Team Section -->
+  <div class="section pink">
+    <div class="flex">
+      <div class="w40">
+        <img src="media/equipe.png" alt="Équipe" class="img-responsive">
+        <p class="text-center">
+          Nous sommes un groupe d'étudiantes en cinématographie à l'Université de Paris, explorant l'impact du Bechdel Test.
+        </p>
+      </div>
+      <div class="w60">
+        <h2>À propos du site</h2>
+        <p>Découvrez plus sur notre démarche et nos analyses en explorant notre site dédié à la représentation féminine dans le cinéma.</p>
+        <img src="media/Clap.png" alt="Équipe" class="img-responsive">
+        <a href="about.asp" class="btn btn-primary">En savoir plus</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Additional Section -->
+  <div class="section pink">
+    <div class="flex">
+      <div class="w40">
+        <img src="media/Nana.png" alt="Research" class="img-responsive">
+      </div>
+      <div class="w60">
+        <h2>Nos analyses</h2>
+        <p>Nous analysons les films à travers le prisme du Bechdel Test pour offrir une perspective unique.</p>
+        <a href="analysis.asp" class="btn btn-primary">Voir nos analyses</a>
+      </div>
+    </div>
+  </div>
+
+</body>
 </html>
