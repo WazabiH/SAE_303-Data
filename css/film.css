@@ -1,15 +1,22 @@
 /* Style global */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: "poppins", sans-serif;
+    background-color:  #ecbdc3;
     margin: 0;
     padding: 0;
 }
 
 h1 {
     text-align: center;
-    color: #333;
+    color: #cb4e5c;
     margin: 20px 0;
+}
+
+.text{
+    text-align: center;
+    font-size: 1.2rem;
+    color: #cb4e5c;
+    margin-bottom: 1rem;
 }
 
 /* Conteneur des films */
@@ -23,8 +30,8 @@ h1 {
 
 /* Style pour chaque film */
 .film-card {
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: #f4d9df;
+    border: 1px solid #f4d9df;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -40,7 +47,7 @@ h1 {
 .film-card img {
     width: 100%;
     height: auto;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #f4d9df;
 }
 
 /* Informations du film */
@@ -64,7 +71,7 @@ h1 {
 /* Bechdel score */
 .film-info .bechdel-score {
     font-weight: bold;
-    color: #4CAF50;
+    color: #cb4e5c;
 }
 
 /* Lien vers IMDB */
