@@ -4,8 +4,13 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #f5f5f5;
   color: #333;
+    background-image: url('images/freepik__upload__52359.png');
+    background-size: cover; /* Ajuste l'image pour couvrir toute la page */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    background-attachment: fixed; /* Fixe l'image lors du scroll */
+
 }
 
 header {
