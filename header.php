@@ -1,6 +1,4 @@
-<head>
-    <link rel="stylesheet" href="styles.css">
-</head>
+
 <header>
     <h1>Mon Site</h1>
     <nav>
