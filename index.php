@@ -15,7 +15,7 @@
 <body>
 
   <!-- Navigation -->
-  <?php include 'footer.php'; ?>
+  <?php include 'header.php'; ?>
 
   <!-- Carousel Section -->
   <div style="margin-bottom: 60px;"></div>
