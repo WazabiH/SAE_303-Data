@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 593ec95700bd43939a67c8debfd2f8abbe2471bc
 <header>
     <h1>Mon Site</h1>
     <nav>
